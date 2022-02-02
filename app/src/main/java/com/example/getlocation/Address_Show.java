@@ -23,8 +23,9 @@ public class Address_Show extends AppCompatActivity {
 
         addresses= (List<Address>) getIntent().getSerializableExtra("location");
 
-        binding.addres.setText(addresses.get(0).getLocality());
-        binding.contry.setText(addresses.get(0).getAddressLine(0));
+        binding.loaclity.setText(addresses.get(0).getLocality());
+        binding.punjab.setText(addresses.get(0).getAdminArea());
+        binding.adds.setText(addresses.get(0).getAddressLine(0));
         binding.longt.setText(String.valueOf(addresses.get(0).getLongitude()));
         binding.loti.setText(String.valueOf(addresses.get(0).getLatitude()));
 

@@ -99,7 +99,7 @@ String locality_add;
                        addresses=geocoder.getFromLocation(location.getLatitude(),
                                 location.getLongitude(),REQUEST_CODE);
 
-                        binding.add.setText(addresses.get(0).getAddressLine(0));
+                        binding.add.setText(addresses.get(0).getSubLocality());
                     }
 
                     catch (IOException e) {
