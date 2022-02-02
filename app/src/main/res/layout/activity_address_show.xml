@@ -7,6 +7,21 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".Address_Show">
+    <TextView
+        android:id="@+id/contuary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/punjab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
 
     <TextView
         android:id="@+id/loaclity"
@@ -16,13 +31,6 @@
         android:textColor="@color/black"
     />
 
-    <TextView
-        android:id="@+id/punjab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:textColor="@color/black"
-        />
     <TextView
         android:id="@+id/adds"
         android:layout_width="wrap_content"

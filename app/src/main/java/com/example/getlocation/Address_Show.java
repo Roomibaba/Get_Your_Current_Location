@@ -22,10 +22,10 @@ public class Address_Show extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         addresses= (List<Address>) getIntent().getSerializableExtra("location");
-
+        binding.contuary.setText(addresses.get(0).getCountryName());
         binding.loaclity.setText(addresses.get(0).getLocality());
         binding.punjab.setText(addresses.get(0).getAdminArea());
-        binding.adds.setText(addresses.get(0).getAddressLine(0));
+        binding.adds.setText(addresses.get(0).getSubLocality());
         binding.longt.setText(String.valueOf(addresses.get(0).getLongitude()));
         binding.loti.setText(String.valueOf(addresses.get(0).getLatitude()));
 
